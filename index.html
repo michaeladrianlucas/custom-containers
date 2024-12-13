@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Minimalistic Vue JS</title>
+  <script type="text/javascript" src="./vue@3/vue.global.prod.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <h1>{{ title }}</h1>
+    <div style="display: flex;">
+      <div style="display: flex; width:25%; height:auto;"
+           v-for="img in imgs" >
+    <img :src="imgdir+img" /> 
+    </div>
+    </div>
+</body>
+<script>
+
+    var app = Vue.createApp({
+      data() {
+        const title = "Custom Containers"
+        const content = "Content"
+        const imgdir = 'images/'
+        const imgs = 
+        [
+            '0CEAF594-0665-438B-A424-D7676527214A.jpeg',
+            '0D3F7E5F-BA22-4868-B294-71F3CBA26384.jpeg',
+            '0D827E04-BCE3-4725-9B51-2CE04DF44C31.jpeg',
+            '0DB8F93D-D118-44CD-B54D-8F537D9A0D23.jpeg',
+            '0FF12ADC-AFEC-405B-B1F8-CB9000BC833F.jpeg',
+            '1C787C28-FECA-4175-877E-D9D61372F54C.jpeg',
+            '1DD5DB14-FC03-42E2-92E7-E5AAE3DDD0B4.jpeg',
+            '2A6B84F9-38A1-41E6-8E20-F3BC1BB33A37.jpeg',
+            '2B35C6AD-09F0-4FFD-9E6A-A5709E72AC7C.jpeg',
+            '2EB3D257-A9B6-4225-9321-608D4E966E6A.jpeg',
+            '2EDE088A-F060-497A-9B0A-83F210BDE86F.jpeg',
+            '2EDFA13D-BF5F-450F-ACC6-A39B5134DFC4.jpeg',
+            '03B5D610-658C-4361-93F7-9F5EC01C41BC.jpeg',
+            '3C7CE965-6511-4CEB-AEA3-F882BEEA2353.jpeg',
+            '3D0B8FEA-9EE7-4534-9F9D-534E66930E5D.jpeg',
+            '3D10323A-641F-41B4-A0DF-B1F469011879.jpeg',
+            '3E4F853E-2232-4E10-9008-79B4BCF121A0.jpeg',
+            '3F025B70-EEDF-47E2-85F0-DEF37EF75873.jpeg',
+            '3F6711FA-7B6E-41E1-A5BA-90A883838029.jpeg',
+            '4B33F25A-370F-4031-A212-E6D61CF96DBC.jpeg',
+            '04E9B1E6-D0F4-43F9-B1F6-F8A62517CDD4.jpeg',
+            '05ACE55B-A8CF-4C45-898A-51DA8A66837D.jpeg',
+            '5C63BB15-DDC3-4B9E-AD5A-E288CA074E24.jpeg',
+            '5CAF3FEA-BF81-4A3B-8B01-DB3CE1A1B3D2.jpeg',
+            '05DFEA6C-C83E-4F59-A7D9-CFE8176F05ED.jpeg',
+            '5E36BF88-3F8B-4461-B7C6-099B990D57CD.jpeg',
+            '5EDA463D-BE40-4EA1-BE68-45DB11B5A94E.jpeg',
+            '5F15D1E0-0B5E-493C-B023-3EC63C61EDCC.jpeg',
+            '6A2968B3-7242-49A0-961E-BA921E3A437B.jpeg',
+            '06AC80C0-735A-442E-9CC0-28027F988C33.jpeg',
+            '6AE92DF6-3027-40A5-BD6F-3069398A82C6.jpeg',
+            '6BFAF550-486F-40CB-92EB-6DDC639EE637.jpeg',
+            '6C0901B7-E585-4D15-B5A9-8232C165A921.jpeg',
+            '6E2DFAF2-32F9-4595-BD7E-64CAD7CBD18D.jpeg',
+            '6FB0FF6D-59F1-4B84-AC90-09E28515345D.jpeg'
+        ]
+        return {
+          title,
+          content,
+          imgs,
+          imgdir
+        }
+      }
+    })
+    app.mount("#app")
+</script>
+</html>
